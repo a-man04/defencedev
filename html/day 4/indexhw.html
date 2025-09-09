@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | HTML</title>
+</head>
+<body>
+    
+    <h1>Job Application: Senior Web Developer</h1>
+    <p>Thank you for you interest in joining our team. Please fill out the application below.</p>
+    <hr>
+
+    <form>
+
+        <h2>Personal Information</h2>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="phone">Phone:</label><br>
+        <input type="number" id="phone" name="phone">
+        <br><br>
+        <label for="url">LinkedIn Profile URL:</label><br>
+        <input type="url" id="url" placeholder="https://linked.com/in/your-profile/" name="url">
+        <br><br>
+        <hr>
+
+        <h2>Professional Experience</h2>
+        <br>
+        <label for="resume">Upload Your Resume (PDF or DOCX):</label>
+        <br>
+        <input type="file" id="for" name="resume">
+        <br><br>
+        <label for="cover-letter">Cover Letter</label><br>
+        <textarea name="cover-letter" id="cover-letter" placeholder="Tell us why you're a great fit for this role..."></textarea>
+        <br><br>
+        <label for="exp">Years of Professional Experience:</label><br>
+        <input type="number" id="exp" name="exp">
+        <br><br>
+        <label for="joining-date">Earliest Possible Start Date:</label><br>
+        <input type="date" id="joining-date" name="joining-date">
+        <br><br>
+        <hr>
+        <br>
+        <h2>Skills & Availability</h2>
+        <label for="skill">Primary Skillset (Choose One):</label><br>
+        <input type="radio" name="frontend-dev" class="skill"><br>
+        <input type="radio" name="backend-dev" class="skill"><br>
+        <input type="radio" name="frontend-dev" class="skill"><br>
+
+        <label for="work-type">Prefered Work Type</label><br>
+        <select name="work-type" id="work-type">
+            <option value="full-time">Full Time</option>
+            <option value="part-time">Part Time</option>
+        </select>
+    </form>
+</body>
+</html>
